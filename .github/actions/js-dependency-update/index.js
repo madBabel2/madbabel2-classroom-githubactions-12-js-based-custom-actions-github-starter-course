@@ -44,7 +44,7 @@ async function run() {
     await exec.exec('git', ['commit', '-m', 'chore(deps): update dependencies'], { cwd: workingDirectory });
     await exec.exec('git', ['push','-u', 'origin', targetBranch], { cwd: workingDirectory });
 
-    // Código restante
+    // crear pull request
     const octokit = github.getOctokit(ghToken);
     try {
         await octokit.rest.pulls.create({
