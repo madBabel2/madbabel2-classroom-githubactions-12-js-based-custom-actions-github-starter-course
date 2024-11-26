@@ -3,7 +3,7 @@ Finalizar la parte de JavaScript de nuestro código para crear correctamente PRs
 
 ## Tareas
 
-1. Modificar el fichero 19-2-custom-actions-js.yaml añadiendo los siguientes pasos:
+1. Modificar el fichero custom-actions-js.yaml añadiendo los siguientes pasos:
    - Revisar los permisos del token GH_TOKEN para verificar que tiene permisos sobre 'contents' y 'pull-requests', ambos establecidos en write.
    - Pasar el valor de secrets.GH_TOKEN al input gh-token de la acción personalizada.
 2. Permitir a GitHub Actions crear PRs modificando la configuración del repositorio de la siguiente manera: 

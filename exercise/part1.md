@@ -40,11 +40,11 @@ runs:
         - 'using: <Node version>' define con qué versión de NodeJS se ejecutará la acción.
         - 'main: <JavaScript file>' define **qué archivo se ejecutará como punto de entrada** de nuestra acción personalizada en JavaScript.
 
-8. Crear un archivo 19-2-custom-actions-js.yaml en la carpeta .github/workflows en la raíz de tu repositorio.
-   - Nombrar el flujo de trabajo 19 - 2 - Custom Actions - JS.
+8. Crear un archivo custom-actions-js.yaml en la carpeta .github/workflows en la raíz de tu repositorio.
+   - Nombrar el flujo de trabajo  Custom Actions - JS.
    - desencadenantes:
      - workflow_dispatch
-   - Establecer la opción run-name del flujo de trabajo en 19 - 2 - Custom Actions - JS.
+   - Establecer la opción run-name del flujo de trabajo en  Custom Actions - JS.
    - Trabajos:
      - **dependency-update**:
        - Debería ejecutarse en ubuntu-latest.

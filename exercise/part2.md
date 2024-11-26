@@ -22,7 +22,7 @@ Explorar como parsear inputs dentro de una acción personalizada en JavaScript.
       - Tener una descripción de 'Whether the output debug messages to the console.'
       - No ser requerido.
 
-2. Modificar el archivo 19-2-custom-actions-js.yaml :
+2. Modificar el archivo custom-actions-js.yaml :
    - Añadir Los inputs necesarios al trigger workflow_dispatch. Estos son base-branch, target-branch, working-directory, y debug. El input gh-token para la acción puede ser recuperado desde el flujo de trabajo a través del secreto **secrets.GH_TOKEN**, y no necesita ser proporcionado como un input al flujo de trabajo. Para ver cómo recuperar datos de secretos, puede consultar la sección Tips más abajo.
    - Pasar estos inputs como parámetros a la acción js-dependency-update.
    - Actualizar el run-name del flujo de trabajo para incluir información sobre la rama base, la rama objetivo y el directorio de trabajo.
