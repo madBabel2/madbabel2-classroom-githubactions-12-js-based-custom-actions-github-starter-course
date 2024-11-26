@@ -15,5 +15,5 @@ jobs:
                   base-branch: 'main'
                   target-branch: 'update-dependencies'
                   working-directory: 'react-app'
-                  gh-token: ${{secrets.GH_TOKEN}}
+                  gh-token: ${{ secrets.GITHUB_TOKEN }}
                   debug: 'true'               
